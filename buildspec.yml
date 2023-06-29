@@ -14,7 +14,7 @@ phases:
       - echo Pushing the Docker image to Amazon ECR...
       - docker push 966961328897.dkr.ecr.us-east-1.amazonaws.com/staging-unifi-ap-syslog
       - echo Writing image definitions file...
-      - printf '[{"name":"staging-unifi-ap-syslog","imageUri":"%s"}]' 966961328897.dkr.ecr.us-east-1.amazonaws.com/staging-unifi-ap-syslog> > imagedefinitions.json
+      - printf '[{"name":"staging-unifi-ap-syslog","imageUri":"%s"}]' 966961328897.dkr.ecr.us-east-1.amazonaws.com/staging-unifi-ap-syslog > imagedefinitions.json
 artifacts:
   files:
     - imagedefinitions.json
